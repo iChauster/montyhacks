@@ -1,0 +1,48 @@
+html,
+body{
+	margin : 0;
+	height : 100%;
+}
+.container{
+	background-color : #990000;
+	display: table;
+	position: relative;
+  	width:100%;
+  	height:100%;
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	background-size: cover;
+ 	-o-background-size: cover;  
+}
+.text-vertical-center{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color:white;
+	font-family : "Roboto";
+	font-weight: 100;
+	font-size:2em;
+}
+h1{
+	font-size : 3em;
+	font-weight: 100;
+}
+.mhs{
+	margin-left : 60px;
+	margin-right : 60px;
+}
+#marcontainer{
+	width:100%;
+	height : 100%;
+	background:black;
+}
+#title{
+	display:table;
+	position:relative;
+	height:15%;
+	background : #312E27;
+	width:100%;
+	font-family: "Roboto";
+	font-weight:100;
+	font-size:10px;
+}

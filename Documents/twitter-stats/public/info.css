@@ -1,0 +1,35 @@
+html,body{
+	width:100%;
+	height:100%;
+}
+.container{
+	display: table;
+	position: relative;
+  	width:100%;
+  	height:100%;
+  	background-color: #00aced;
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	background-size: cover;
+ 	-o-background-size: cover; 
+}
+.text-vertical-center{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color:white;
+	font-size:2em;
+}
+.btn{
+	background-color: white;
+}
+a{
+	color:#0084b4;
+}
+a:hover{
+	color: white;
+}
+.btn:hover{
+	background-color:#0084b4;
+	color:white;
+}

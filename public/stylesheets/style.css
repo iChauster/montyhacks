@@ -95,6 +95,9 @@ body {
 		padding:2px;
 		margin:20px;
 	}
+	#wraploc{
+		background:url(../images/mhs-bicubic.jpg) no-repeat center center scroll;
+	}
 }
 
 

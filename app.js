@@ -55,6 +55,8 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
-
+app.listen(process.env.PORT || 3000, function(){
+  console.log("gradeCheck: port : %d in %s", this.address().port, app.settings.env);
+});
 
 module.exports = app;

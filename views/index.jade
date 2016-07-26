@@ -1,5 +1,39 @@
-extends layout
+doctype html
+html(lang ='en')
+	head
+		title MontyHacks
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet', href='stylesheets/style.css')
+		script(src='javascripts/jquery-3.1.0.min.js')
+		script(src='javascripts/bootstrap.min.js')
+		link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+	nav.navbar.navbar-default#nomarg
+		.container-fluid
+			.navbar-header
+				a.navbar-brand(href="#") Brand
+			.collapse.navbar-collapse#bs-example-navbar-collapse-1
+				ul.nav.navbar-nav
+					li.active
+						a(href="#") Home
+							span.sr-only (current)
+					li
+						a(href="#") Register
+					li
+						a(href="#") About
+					li 
+						a(href="#") Location
+					li
+						a(href-"#") Sponsors
 
-block content
-  h1= title
-  p Welcome to #{title}
+	body
+		.drop
+			#title
+				.brand
+					h1 MONTYHACKS
+		#about
+			.container
+				.monty
+					img#upleft(src="/images/dark-logo.png" style="width:100px;height:100px")
+					img#upright(src="/images/dark-logo.png" style="width:100px;height:100px")
+					h1 ABOUT
+

@@ -1,8 +1,61 @@
+html,
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin:0;
+  height:100%;
+}
+@font-face{
+	font-family: NexaLight;
+	src:url(nexa/NexaLight.otf);
+}
+@font-face{
+	font-family: NexaBold;
+	src:url(nexa/NexaBold.otf);
+}
+.drop{
+	width:100%;
+	height:100%;
+	background-color: green
+}
+#nomarg{
+	margin-bottom:0;
+}
+#title{
+	bottom:10%;
+	position:absolute;
+}
+.brand {
+	padding:15px;
+	margin:50px;
+	font-size:3em;
+	font-family:NexaLight;
+	color:white;
+	letter-spacing: 4px;
+}
+#about{
+	height:100%;
+	width:100%;
+	background-color:white;
+	color:black;
+}
+#about h1{
+	text-align: center;
+	font-family:NexaBold;
+	padding:10px;
+}
+.monty{
+	padding-top:5px;
+}
+#upleft{
+	position:absolute;
+	left:0;
+	padding:15px;
+}
+#upright{
+	position:absolute;
+	right:0%;
+	padding:15px;
+
 }
 
-a {
-  color: #00B7FF;
-}
+

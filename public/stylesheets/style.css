@@ -121,7 +121,10 @@ footer a:hover{
 	color:#000000;
 }
 #map{
-	height:400px;
+	height:100%;
+}
+#over{
+	height:75%;
 }
 .btn-social {
     display: inline-block;

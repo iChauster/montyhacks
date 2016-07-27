@@ -9,6 +9,7 @@ html(lang ='en')
 		script(src='javascripts/scroll.js')
 		link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+		script(src='javascripts/script.js')
 		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Noto+Sans')
 		link(rel='stylesheet' type='text/css' href="font-awesome/css/font-awesome.min.css")
 	nav.navbar.navbar-default.navbar-fixed-top#nomarg
@@ -48,7 +49,8 @@ html(lang ='en')
 		#location
 			.container#wraploc
 				h1.text-vertical-center LOCATION
-			iframe#map(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgtF35gittLvFTleyXD52Dl0R-pv2uXFA&q=Montgomery+High+School,Montgomery+NJ&zoom=14" allowfullscreen)
+			#over
+				iframe#map(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgtF35gittLvFTleyXD52Dl0R-pv2uXFA&q=Montgomery+High+School,Montgomery+NJ&zoom=14" allowfullscreen)
 		footer.text-center
 			.footer-above
 				.container

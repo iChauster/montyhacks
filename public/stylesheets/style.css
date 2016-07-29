@@ -110,6 +110,9 @@ footer .footer-below{
 	background-color:#fff;
 	color:green;
 }
+#swol{
+	margin-top:7px;
+}
 footer h3 {
     margin-bottom: 10px;
     font-family:"Noto Sans";
@@ -162,6 +165,36 @@ footer a:hover{
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
+}
+#don{
+	color:white;
+	text-decoration: none;
+	margin-top:7px;
+}
+#don:hover{
+	color:black;
+	text-decoration: none;
+}
+.button:hover{
+	border:solid #000;
+}
+.button{
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	-o-border-radius:0;
+	background-color: transparent;
+	border:solid #fff;
+	box-sizing: border-box;
+	color:#000;
+	display: inline-block;
+	margin:0;
+	padding:15px;
+	height:30px;
+	width:180px;
+	line-height: 4px;
+	transition:border 2s,color 2s;
+	-webkit-transition:border 2s,color 2s;
 }
 
 .scrolloff{

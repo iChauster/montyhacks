@@ -17,7 +17,7 @@ body {
 .drop{
 	width:100%;
 	height:100%;
-	background-color: green
+	background-color: green;
 }
 #nomarg{
 	margin-bottom:0;
@@ -38,6 +38,10 @@ body {
 	font-family:NexaLight;
 	color:white;
 	letter-spacing: 4px;
+	text-align: center;
+}
+.brand h2{
+	font-size:30px;
 }
 #about{
 	height:100%;
@@ -166,6 +170,9 @@ footer a:hover{
 @media only screen and (max-width: 768px){
 	.brand h1{
 		font-size:25px;
+	}
+	.brand h2 {
+		font-size:18px;
 	}
 	.brand{
 		padding:2px;

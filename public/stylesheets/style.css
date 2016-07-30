@@ -255,6 +255,29 @@ footer a:hover{
 	font-weight: 100;
 	font-size:26px;
 }
+#schedule{
+	background:green;
+	color:white;
+}
+#schedule h2{
+	font-family: "Roboto Mono";
+	font-weight:300;
+	font-size:30px;
+}
+#schedule h3 {
+	font-family: "Roboto Mono";
+	font-weight:100;
+	font-size:18px;
+}
+#sche{
+	font-family:"NexaLight";
+	letter-spacing:4px;
+}
+.short{
+	text-align: left;
+	width:250px;
+	margin-left: 0;
+}
 @media only screen and (max-width: 768px){
 	.brand h1{
 		font-size:25px;

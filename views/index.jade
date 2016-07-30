@@ -10,7 +10,7 @@ html(lang ='en')
 		link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
 		script(src='javascripts/script.js')
-		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Noto+Sans')
+		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Noto+Sans|Roboto+Mono:100,100italic,300,300italic')
 		link(rel='stylesheet' type='text/css' href="font-awesome/css/font-awesome.min.css")
 	nav.navbar.navbar-default.navbar-fixed-top#nomarg
 		.container-fluid
@@ -32,6 +32,8 @@ html(lang ='en')
 						a(href="#location") Location
 					li.page-scroll
 						a(href="#faq") FAQ
+					li.page-scroll
+						a(href="#schedule") Schedule
 					li.page-scroll
 						a(href-"#") Sponsors
 					li.page-scroll
@@ -87,7 +89,7 @@ html(lang ='en')
 
 
 		#location
-			.container#wraploc
+			.container.monty.margtop#wraploc
 				h1.text-vertical-center LOCATION
 			#over
 				iframe#map(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgtF35gittLvFTleyXD52Dl0R-pv2uXFA&q=Montgomery+High+School,Montgomery+NJ&zoom=14" allowfullscreen)
@@ -133,7 +135,39 @@ html(lang ='en')
 						h3 That's alright! We'll have mentors and workshops to guide you through the hackathon. Students of all levels are encouraged to attend.
 				h2 But what is a hackathon?
 				h1#essence A hackathon is an overnight coding "competition" where hackers race to complete their own product, website, game, app, or piece of hardware to win prizes, meet new friends, and learn.
-						
+		#schedule
+			.container
+				.monty.margtop
+					h1#sche SCHEDULE
+					hr.short
+				.col-md-6
+					h2 SATURDAY
+					h3 10:00 am: Students Register by Main Office/Front Entrance
+					h3 11:00 am: Opening Ceremony @ MPAC
+					h3 12:00 pm: Team formation @ Commons & Hacking Begins @ Gym -- Side Table
+					h3 12:45 pm: Lunch @ Commons
+					h3 1:15 pm - 2:15 pm : Github Workshop
+					h3 2:15 pm - 3:15 pm : Web Workshop
+					h3 3:15 pm - 4:15 pm : Java Workshop
+					h3 4:15 pm : Snack @ Commons
+					h3 4:30 pm - 6:00 pm : iOS Workshop
+					h3 6:00 pm - 7:30 pm : Android Workshop
+					h3 7:30 pm : Dinner @ Commons
+					h3 9:00 pm : Cupstacking @ Gym
+					h3 10:00 pm : Sleeping Areas Open (Girls in the Media Center, Guys in the Aux Gym)
+					h3 10:30 pm : Women Hackers Meetup
+					h3 12:00 am : Midnight Snack @ Commons
+				.col-md-6
+					h2 SUNDAY
+					h3 12:30 am : Smash Tourney @ Classroom
+					h3 3:00 am : Mafia @ Commons
+					h3 5:00 am : Ping Pong Tournament @ Commons
+					h3 7:00 am : Breakfast @ Commons
+					h3 11:00 am : Lunch @ Commons
+					h3 12:00 pm : Hacking Ends
+					h3 12:15 pm : Demos @ MPAC
+					h3 3:00 pm : Closing Ceremony @ MPAC
+
 		footer.text-center
 			.footer-above
 				.container

@@ -44,7 +44,6 @@ body {
 	font-size:30px;
 }
 #about{
-	height:100%;
 	width:100%;
 	background-color:white;
 	color:black;
@@ -196,9 +195,39 @@ footer a:hover{
 	transition:border 2s,color 2s;
 	-webkit-transition:border 2s,color 2s;
 }
-
+#center{
+	text-align: center;
+}
+#info h4{
+	text-align:center;
+	font-family:Roboto;
+	font-weight:100;
+	font-size:20px;
+}
+#work{
+	padding:10px;
+}
 .scrolloff{
 	pointer-events: none;
+}
+#info{
+	margin-top:15px;
+	width:90%;
+}
+#info h2{
+	text-align: left;
+	font-family:Roboto;
+	font-weight:300;
+	font-size:25px;
+}
+#info h3{
+	text-align: left;
+	font-family: Roboto;
+	font-weight:100;
+	font-size:20px;
+}
+.pad{
+	padding:15px;
 }
 @media only screen and (max-width: 768px){
 	.brand h1{

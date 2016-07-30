@@ -48,7 +48,7 @@ body {
 	background-color:white;
 	color:black;
 }
-#about h1{
+#about h1{                                                      
 	text-align: center;
 	font-family:NexaBold;
 	padding:10px;
@@ -130,7 +130,7 @@ footer a:hover{
 	height:100%;
 }
 #over{
-	height:75%;
+	height:70%;
 }
 .btn-social {
     display: inline-block;
@@ -226,8 +226,16 @@ footer a:hover{
 	font-weight:100;
 	font-size:20px;
 }
+#faq{
+	height:100%;
+	width:100%;
+	text-align: center; 
+}
 .pad{
 	padding:15px;
+}
+.pa{
+	padding:20px;
 }
 @media only screen and (max-width: 768px){
 	.brand h1{

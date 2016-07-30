@@ -227,15 +227,33 @@ footer a:hover{
 	font-size:20px;
 }
 #faq{
-	height:100%;
 	width:100%;
 	text-align: center; 
+}
+#faq h2{
+	text-align: center;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size:25px;
+}
+#faq h3{
+	text-align: left;
+	font-family:Roboto;
+	font-weight: 100;
+	font-size: 18px;
 }
 .pad{
 	padding:15px;
 }
 .pa{
 	padding:20px;
+}
+#essence{
+	padding: 15px;
+	font-family:Roboto;
+	font-style: italic;
+	font-weight: 100;
+	font-size:26px;
 }
 @media only screen and (max-width: 768px){
 	.brand h1{

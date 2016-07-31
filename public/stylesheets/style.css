@@ -39,6 +39,20 @@ body {
 	color:white;
 	letter-spacing: 4px;
 	text-align: center;
+	-moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-out;
+    -moz-animation-duration: 1.2s;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1.2s;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 1.2s;
 }
 .brand h2{
 	font-size:30px;
@@ -59,12 +73,12 @@ body {
 	background-color:white;
 	color:black;
 }
+
 #location h1{
 	text-align: center;
 	font-family:NexaBold;
 	padding:10px;
 	letter-spacing:2px;
-
 }
 .monty{
 	padding-top:5px;
@@ -86,6 +100,15 @@ body {
 	height:30%;
 	display:table;
 	position:relative;
+	background-attachment: fixed;
+}
+#blurcode{
+	background:url(../images/blurcode.jpg) no-repeat center center scroll;
+	color: white;
+	width:100%;
+	height:30%;
+	display: table;
+	position: relative;
 	background-attachment: fixed;
 }
 .text-vertical-center{
@@ -258,6 +281,7 @@ footer a:hover{
 #schedule{
 	background:green;
 	color:white;
+	padding-bottom: 15px
 }
 #schedule h2{
 	font-family: "Roboto Mono";
@@ -278,6 +302,43 @@ footer a:hover{
 	width:250px;
 	margin-left: 0;
 }
+#sponsors{
+	height:75%;
+	width:100%;
+	background-color:white;
+	color:black;
+}
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        -moz-transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 @media only screen and (max-width: 768px){
 	.brand h1{
 		font-size:25px;
@@ -291,6 +352,9 @@ footer a:hover{
 	}
 	#wraploc{
 		background:url(../images/mhs-bicubic.jpg) no-repeat center center scroll;
+	}
+	#blurcode{
+		background: url(../images/xsblurcode.jpg) no-repeat center center scroll;
 	}
 }
 

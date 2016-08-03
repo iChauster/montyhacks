@@ -12,4 +12,5 @@ $(document).ready(function () {
         $("#map").mouseleave(function () {
             $('#map').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
         });
+
 });

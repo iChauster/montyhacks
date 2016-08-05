@@ -224,7 +224,7 @@ footer a:hover{
 #info h4{
 	text-align:center;
 	font-family:Roboto;
-	font-weight:100;
+	font-weight:300;
 	font-size:25px;
 }
 #work{
@@ -233,21 +233,28 @@ footer a:hover{
 .scrolloff{
 	pointer-events: none;
 }
+
 #info{
 	margin-top:15px;
 	width:90%;
 }
+#info h1 {
+	text-align: left;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size : 25px;
+}
 #info h2{
 	text-align: left;
 	font-family:Roboto;
-	font-weight:300;
-	font-size:25px;
+	font-weight:400;
+	font-size:30px;
 }
 #info h3{
 	text-align: left;
 	font-family: Roboto;
 	font-weight:100;
-	font-size:28px;
+	font-size:22px;
 }
 #faq{
 	width:100%;

@@ -220,6 +220,8 @@ footer a:hover{
 }
 #center{
 	text-align: center;
+	 -webkit-animation: bounce 3s infinite;
+  	animation: bounce 3s infinite;
 }
 #info h4{
 	text-align:center;
@@ -345,7 +347,31 @@ footer a:hover{
         opacity: 1;
     }
 }
+@-webkit-keyframes bounce {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
 
+  70% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+@keyframes bounce {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+
+  70% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px); }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
 @media only screen and (max-width: 768px){
 	.brand h1{
 		font-size:25px;

@@ -389,8 +389,14 @@ footer a:hover{
 	#blurcode{
 		background: url(../images/xsblurcode.jpg) no-repeat center center scroll;
 	}
+	#info h1 {
+		font-size : 22px;
+	}
 	#info h3{
 		font-size:20px;
+	}
+	#info h4{
+		font-style: 21px
 	}
 }
 

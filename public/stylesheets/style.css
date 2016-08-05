@@ -225,7 +225,7 @@ footer a:hover{
 	text-align:center;
 	font-family:Roboto;
 	font-weight:100;
-	font-size:20px;
+	font-size:25px;
 }
 #work{
 	padding:10px;
@@ -247,7 +247,7 @@ footer a:hover{
 	text-align: left;
 	font-family: Roboto;
 	font-weight:100;
-	font-size:20px;
+	font-size:28px;
 }
 #faq{
 	width:100%;
@@ -355,6 +355,9 @@ footer a:hover{
 	}
 	#blurcode{
 		background: url(../images/xsblurcode.jpg) no-repeat center center scroll;
+	}
+	#info h3{
+		font-size:20px;
 	}
 }
 

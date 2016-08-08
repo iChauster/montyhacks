@@ -280,6 +280,13 @@ footer a:hover{
 .pa{
 	padding:20px;
 }
+.split{
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	-o-border-radius: 28px;
+	border-radius: 28px;
+	border: solid green 2px;
+}
 #essence{
 	padding: 15px;
 	font-family:Roboto;

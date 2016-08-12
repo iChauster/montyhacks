@@ -324,6 +324,19 @@ footer a:hover{
 	background-color:white;
 	color:black;
 }
+.raise{
+	bottom:0;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.raise:hover{
+	bottom:10px;
+	padding-top:-10px;
+}
+
 @-moz-keyframes dropHeader {
     0% {
         -moz-transform: translateY(100px);

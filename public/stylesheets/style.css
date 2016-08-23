@@ -19,6 +19,17 @@ body {
 	height:100%;
 	background-color: green;
 }
+#important{
+	text-align: center;
+	color:black;
+	font-family: Roboto;
+	border:solid 1px black;
+	font-size:25px;
+}
+.div{
+	margin-left:20%;
+	margin-right:20%;
+}
 #nomarg{
 	margin-bottom:0;
 	background-color: rgba(248,248,248,1.0);
@@ -241,7 +252,6 @@ footer a:hover{
 	width:90%;
 }
 #info h1 {
-	text-align: left;
 	font-family: Roboto;
 	font-weight: 300;
 	font-size : 25px;

@@ -42,6 +42,9 @@ body {
 	bottom:10%;
 	position:absolute;
 }
+#nopad{
+	padding:0;
+}
 .brand {
 	padding:15px;
 	margin:50px;

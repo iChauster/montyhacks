@@ -14,10 +14,17 @@ body {
 	font-family: NexaBold;
 	src:url(nexa/NexaBold.otf);
 }
+.wave svg{
+	bottom:0;
+	position:absolute;
+	height:20%;
+	margin-bottom:-5px;
+	width:100%;
+}
 .drop{
 	width:100%;
 	height:100%;
-	background-color: green;
+	background:linear-gradient(60deg, darkgreen, green);
 }
 #important{
 	text-align: center;
@@ -240,6 +247,7 @@ footer a:hover{
 	text-align: center;
 	 -webkit-animation: bounce 3s infinite;
   	animation: bounce 3s infinite;
+  	padding:0;
 }
 #info h4{
 	text-align:center;
@@ -435,6 +443,9 @@ footer a:hover{
 	}
 	#info h4{
 		font-style: 21px
+	}
+	.wave svg{
+		height:10%;
 	}
 }
 

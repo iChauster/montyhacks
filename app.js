@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/nodescripts', express.static(path.join(__dirname, '/node_modules')));
 
 app.use('/', routes);
 app.use('/users', users);
@@ -56,7 +57,7 @@ app.use(function(err, req, res, next) {
   });
 });
 app.listen(process.env.PORT || 3000, function(){
-  console.log("gradeCheck: port : %d in %s", this.address().port, app.settings.env);
+  console.log("montyhacks: port : %d in %s", this.address().port, app.settings.env);
 });
 
 module.exports = app;

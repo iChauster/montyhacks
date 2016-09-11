@@ -14,6 +14,9 @@ body {
 	font-family: NexaBold;
 	src:url(nexa/NexaBold.otf);
 }
+.navbar-nav{
+	font-family:Roboto;
+}
 .wave svg{
 	bottom:0;
 	position:absolute;
@@ -353,6 +356,32 @@ footer a:hover{
 	background-color:white;
 	color:black;
 }
+#leadership{
+	padding:15px;
+	width:90%;
+	text-align: center;
+}
+#leadership h2{
+	font-family:"Noto Sans";
+}
+#leadership h4{
+	font-family:"Roboto";
+	font-weight:100;
+}
+.photo{
+	height:100%;
+	width:100%;
+	max-width:300px;
+	border-radius: 1000px;
+	border:transparent solid 3px;
+	opacity: 0;
+	cursor: pointer;
+	margin-top:100px;
+	-webkit-transition: all 3s ease-in-out, border 1s ease-in-out;
+    -moz-transition: all 3s ease-in-out, border 1s ease-in-out;
+    -o-transition: all 3s ease-in-out, border 1s ease-in-out;
+    transition: all 3s ease-in-out, border 1s ease-in-out;
+}
 .raise{
 	bottom:0;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -361,11 +390,32 @@ footer a:hover{
     transition: all 0.3s ease-in-out;
     position: relative;
 }
+#leadership .col-md-2{
+	opacity:0;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 .raise:hover{
 	bottom:10px;
 	padding-top:-10px;
 }
-
+#vineet:hover{
+	border: solid 3px #A10C10;
+}
+#ben:hover{
+	border: solid 3px #0085CA;
+}
+#julia:hover{
+	border: solid 3px #C38EF1;
+}
+#niva:hover{
+	border: solid 3px #00bfff;
+}
+#ivan:hover{
+	border: solid 3px #5CBFEB;
+}
 @-moz-keyframes dropHeader {
     0% {
         -moz-transform: translateY(100px);

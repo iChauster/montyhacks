@@ -38,4 +38,19 @@ $(document).ready(function () {
         	}
         });
 
+        var granimInstance = new Granim({
+            element : "#g",
+            name:'granim',
+            opacity:[1,1],
+            states:{
+                "default-state" : {
+                    gradients:[
+                        ["#005820","#468930"],
+                        ["#3F5E8C","#1FFC9F"]
+                    ],
+                transitionSpeed:10000
+                }
+            }
+        });
+
 });

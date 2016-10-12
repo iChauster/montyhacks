@@ -33,6 +33,27 @@ body {
     bottom: 0;
     left: 0;
 }
+#home h1 {
+	font-family: NexaLight;
+	font-size:2em;
+}
+#r{
+	padding-top:14px;
+}
+#home a{
+	padding:12px;
+	color:white;
+	border:solid white 1px;
+	text-decoration: none !important;
+	-webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+#home a:hover{
+	color:lightgreen;
+	border: solid lightgreen 1px;
+}
 .wave svg{
 	bottom:0;
 	position:absolute;

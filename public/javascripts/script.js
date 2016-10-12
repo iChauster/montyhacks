@@ -52,5 +52,27 @@ $(document).ready(function () {
                 }
             }
         });
+        var granimTop = new Granim({
+            element: "#canvas-image",
+            name : 'granim',
+            direction: 'top-bottom',
+            opacity:[1,1,1],
+            states : {
+                "default-state" : {
+                    gradients : [
+                        ["#162616","#295b2a","#2e842f"],
+                        ["1ffc9f","#2e4466", "#2e842f"]
+                    ],
+                    transitionSpeed:10000
+                },
+                "register-state" : {
+                    gradients : [
+                        [],
+                        []
+                    ]
+                }
+
+            }
+        })
 
 });

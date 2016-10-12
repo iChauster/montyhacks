@@ -16,11 +16,13 @@ html(lang ='en')
 		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Noto+Sans|Roboto+Mono:100,100italic,300,300italic')
 		link(rel='stylesheet' type='text/css' href="font-awesome/css/font-awesome.min.css")
 	
-		link(rel="apple-touch-icon" sizes="180x180" href="stylesheets/favicons/apple-touch-icon.png")
 		link(rel="icon" href="stylesheets/favicons/favicon.ico")
-		link(rel="mask-icon" href="stylesheets/favicons/safari-pinned-tab.svg" color="#1e800e")
-		meta(name="theme-color" content="#1CA949")
-		link(rel="manifest" href="stylesheets/favicons/manifest.json")
+		meta(name="theme-color" content="#10965e")
+		link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png")
+		link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
+		link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
+		link(rel="manifest", href="/manifest.json")
+		link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#1ffc9f")
 	nav.navbar.navbar-default.navbar-fixed-top#nomarg
 		.container-fluid
 			.navbar-header
@@ -30,7 +32,7 @@ html(lang ='en')
 					span.icon-bar
 					span.icon-bar
 				a.navbar-brand#nopad(href="#")
-					img(src="/images/LogoXKyleLi-1068x1068.png" style="width:50px; height:50px")
+					img(src="/images/LogoXKyleLi-1068x1068.png" style="height:50px; padding:5px;")
 			.collapse.navbar-collapse#bs-example-navbar-collapse-1
 				ul.nav.navbar-nav
 					li.active.page-scroll
@@ -51,17 +53,19 @@ html(lang ='en')
 
 	body(data-spy="scroll" data-target="#bs-example-navbar-collapse-1") 
 		.drop#home
-			#title
-				.brand.titles
-					h1 MONTYHACKS
-					hr
-					h2#dat 4.22.16
+			canvas#canvas-image
+			.text-vertical-center.vis
+				.row
+					img#logo(src="/images/mhlogo.png")
+				.row
+					h1 4.22.16
+					a#register(href="/register") Register
+		#about
 			.wave
 				svg(width="979px" viewBox="0 0 960 173" preserveAspectRatio="none")
 					g(transform="translate(-8.000000, -15.000000)" id="Fill-3" stroke="none" fill="#fff")
 						path
 							animate(attributeName="d" dur="1000ms" repeatCount="1" values="M0,187 C47,187 86,187 136,187 C186,167 247,187 307,187 C367,187 429,187 496,187 C563,187 648,187 710,187 C772,187 820,187 866,187 C912,187 965,187 986,187 L986,187; M0,187 C47,160 86,132 136,124 C186,115 247,145 307,135 C367,126 429,76 496,67 C563,58 648,90 710,81 C772,73 820,23 866,16 C912,9 965,37 986,39 L986,187" fill="freeze")
-		#about
 			.container
 				.monty.margtop
 					img#upleft(src="/images/dark-logo.png" style="width:100px;height:100px")

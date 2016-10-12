@@ -75,7 +75,10 @@ body {
 	width: 90%;
 }
 #register{
-	color:;
+	color:white;
+	font-family: NexaLight;
+	text-align: center;
+	text-transform: uppercase;
 }
 #important{
 	text-align: center;

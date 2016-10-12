@@ -67,12 +67,22 @@ $(document).ready(function () {
                 },
                 "register-state" : {
                     gradients : [
-                        [],
-                        []
-                    ]
+                        ["22F39F", "#2FAF98", "#3F5E8D"],
+                        ["#3B7990", "#1C2955", "#000"]
+                    ],
+                    transitionSpeed:3000
                 }
 
             }
-        })
+        });
+        $("#register").hover(function () {
+            //stuff to do on mouse enter
+            granimTop.changeState("register-state")
+        }, 
+        function () {
+            //stuff to do on mouse leave
+            granimTop.changeState("default-state")
+        });
+
 
 });

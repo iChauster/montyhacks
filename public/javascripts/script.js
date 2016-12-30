@@ -37,7 +37,20 @@ $(document).ready(function () {
         		}, 3000)
         	}
         });
-
+        var footerInstance = new Granim({
+            element : "#foot",
+            name : 'granim',
+            opacity : [1,1],
+            states : {
+                "default-state" : {
+                    gradients:[
+                        ["#149824","#37ab35"],
+                        ["#265d7e","#5f5481"]
+                    ],
+                transitionSpeed:10000
+                }
+            }
+        })
         var granimInstance = new Granim({
             element : "#g",
             name:'granim',

@@ -82,12 +82,9 @@ html(lang ='en')
 								| of all levels 
 							| are welcome!
 				.row
-					.col-md-10.col-xs-8
-						h2 Your Experience
-						h3 Programming experience is not necessary to attend, all that's needed is an eager interest in exploring the world of computer science for 12 hours!
-					.col-md-2.col-xs-4#center
-						img(src="http://vignette1.wikia.nocookie.net/pokemongo/images/7/72/Lucky_Egg.png/revision/latest?cb=20160726023111" style="width:120px; height:120px;")
-				.row.padleft
+					h2 Your Experience
+					h3 Programming experience is not necessary to attend, all that's needed is an eager interest in exploring the world of computer science for 12 hours!
+				.row
 					h2 Workshops
 					h3 There's a variety of workshops available for hackers throughout the day. From mobile development to deploying on git, we've got you covered.
 				.row
@@ -102,7 +99,7 @@ html(lang ='en')
 								img.raise(src="https://cdn1.iconfinder.com/data/icons/ios-7-style-metro-ui-icons/512/MetroUI_OS_Android.png" style="width:100px;height:100px")
 								#android.pad Android Workshop
 							.col-md-4
-								img.raise(src="http://qpiddigital.com/img/qpid-webdevelopment-icon.png" style="width:100px;height:100px")
+								img.raise(src="/images/web.png" style="width:100px; height:100px")
 								#webwork.pad Web Workshop
 						.row.pad
 							.col-md-6
@@ -173,28 +170,32 @@ html(lang ='en')
 				.row.vis
 					h2.cn SATURDAY
 					.row.cn
+						.row 
+							h3 7:00 am: Doors Open
 						.row
-							h3 10:00 am: Students Register by Main Office/Front Entrance
+							h3 8:00 am: Students Register by Main Office/Front Entrance
 						.row
-							h3 11:00 am: Opening Ceremony @ MPAC
+							h3 9:00 am: Opening Ceremony @ MPAC
 						.row
-							h3 12:00 pm: Team formation @ Commons & Hacking Begins @ Gym -- Side Table
+							h3 10:00 pm: Hacking Begins @ Commons
 						.row
-							h3 12:45 pm: Lunch @ Commons
+							h3 12:00 pm: Lunch @ Commons
 						.row
-							h3 1:15 pm - 2:15 pm : Github Workshop
+							h3 1:00 pm - 2:00 pm : Github Workshop
 						.row
-							h3 2:15 pm - 3:15 pm : Web Workshop
+							h3 2:00 pm - 3:00 pm : Web Workshop
 						.row
-							h3 3:15 pm - 4:15 pm : Java Workshop
+							h3 3:00 pm - 4:00 pm : Java Workshop
 						.row
-							h3 4:15 pm : Snack @ Commons
+							h3 4:00 pm : Snack @ Commons
 						.row
-							h3 4:30 pm - 6:00 pm : iOS Workshop
+							h3 5:00 pm - 6:00 pm : iOS Workshop
 						.row
-							h3 6:00 pm - 7:30 pm : Android Workshop
+							h3 6:00 pm - 7:00 pm : Android Workshop
 						.row
-							h3 7:30 pm : Dinner @ Commons
+							h3 7:00 pm : Dinner @ Commons
+						.row
+							h3 8:00 pm : Expos / Judging @ Gym
 						.row
 							h3 9:00 pm : Closing Ceremony @ MPAC
 					
@@ -224,7 +225,8 @@ html(lang ='en')
 		footer.text-center
 			.footer-above
 				.container
-					.row
+					canvas#foot
+					.row.vis
 						.footer-col.col-md-4
 							h3 For more questions/sponsor inquiries, email :
 							.row

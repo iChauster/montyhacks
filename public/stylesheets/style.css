@@ -437,6 +437,17 @@ footer a:hover{
 	font-family:"Roboto";
 	font-weight:100;
 }
+#support{
+	text-align: center;
+	padding-bottom: 20px;
+}
+#support .row{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#support h2{
+	font-family:"Noto Sans";
+}
 .photo{
 	height:100%;
 	width:100%;

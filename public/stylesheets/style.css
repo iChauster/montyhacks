@@ -148,7 +148,9 @@ body {
 	text-align: center;
 	font-family:NexaBold;
 	padding:10px;
+
 }
+
 #location{
 	height:75%;
 	width:100%;
@@ -323,24 +325,32 @@ footer a:hover{
 #info{
 	margin-top:15px;
 	width:90%;
+
 }
 #info h1 {
 	font-family: Roboto;
 	font-weight: 300;
 	font-size : 25px;
 	padding:0.5em;
+	line-height: 1.5em;
+
 }
 #info h2{
 	text-align: left;
 	font-family:Roboto;
 	font-weight:400;
 	font-size:30px;
+	line-height: 1.5em;
 }
 #info h3{
 	text-align: left;
 	font-family: Roboto;
 	font-weight:100;
 	font-size:22px;
+	line-height: 1.5em;
+}
+#info h4 {
+	line-height: 1.5em;
 }
 #faq{
 	width:100%;
@@ -357,6 +367,7 @@ footer a:hover{
 	font-family:Roboto;
 	font-weight: 100;
 	font-size: 18px;
+	line-height: 1.25em;
 }
 .pad{
 	padding:15px;

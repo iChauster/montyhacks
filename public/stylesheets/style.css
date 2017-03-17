@@ -595,6 +595,9 @@ footer a:hover{
 	.wave svg{
 		height:10%;
 	}
+	.wide {
+		max-height: 70px !important;
+	}
 }
 
 

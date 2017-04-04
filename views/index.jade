@@ -209,19 +209,19 @@ html(lang ='en')
 				h2 Leadership Team:
 				hr
 				.col-md-2.col-md-offset-1.col-xs-4.raise
-					img.photo#vineet(src="/images/VinP.png")
+					img.photo#vineet(src="/images/VinP.png" data-toggle="modal" data-target="#vineetModal")
 					h4 Vineet Pasumarti
 				.col-md-2.col-xs-4.raise
-					img.photo#ben(src="/images/BenM.jpg")
+					img.photo#ben(src="/images/BenM.jpg" data-toggle="modal" data-target="#benModal")
 					h4 Ben Mathew 
 				.col-md-2.col-xs-4.raise
-					img.photo#julia(src="/images/JuliaG.jpg")
+					img.photo#julia(src="/images/JuliaG.jpg" data-toggle="modal" data-target="#juliaModal")
 					h4 Julia Guo
 				.col-md-2.col-xs-4.col-xs-offset-2.col-md-offset-0.raise
-					img.photo#niva(src="/images/NivaS.PNG")
+					img.photo#niva(src="/images/NivaS.PNG" data-toggle="modal" data-target="#nivaModal")
 					h4 Nivedhitha Sivakumar
 				.col-md-2.col-xs-4.raise
-					img.photo#ivan(src="/images/IvanC.jpg")
+					img.photo#ivan(src="/images/IvanC.jpg" data-toggle="modal" data-target="#ivanModal")
 					h4 Ivan Chau
 			.container#support
 				h2 Sponsors:
@@ -305,6 +305,55 @@ html(lang ='en')
 					.row
 						.col-lg-12
 							Copyright &copy MontyHacks 2016
+		
+		.modal.fade#vineetModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Vineet '19
+					.modal-body#text
+						h5 Vineet is a sophomore and the secretary of the MHS Computer Science Club. He is interested in game and app development. His free time is filled with soccer and robotics.
+		.modal.fade#benModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Ben '20
+					.modal-body#text
+						h5 Ben is a freshman and the founder and president of Young Entrepreneurs Club of New Jersey. He enjoys biomedical engineering and making cookies in his free time.
+		.modal.fade#juliaModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Julia '18
+					.modal-body#text
+						h5 Julia is a junior and the president of the MHS Computer Science Club. She is interested in machine learning and front-end web development. In her free time, she loves petting dogs and drawing.
+		.modal.fade#nivaModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Niva '19
+					.modal-body#text
+						h5 Niva is a sophomore at Montgomery High School and enjoys participating in math competitions. In her free time, she enjoys playing flute.
+		.modal.fade#ivanModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet 
+							a#ivanLink(href="http://ichauster.github.io") About Ivan '19
+					.modal-body#text
+						h5 Ivan is a sophomore at Montgomery High School and enjoys coding and attending hackathons.
+		
+
 	script.
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -23,6 +23,15 @@ body {
 .rightAlign{
 	text-align: right;
 }
+#text{
+	text-align: center;
+	font-size:1em;
+	font-family: Roboto;
+}
+#ivanLink{
+	text-decoration: none !important;
+	color:black;
+}
 #canvas-image{
 	position: absolute;
     display: block;

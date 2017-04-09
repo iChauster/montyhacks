@@ -1,6 +1,6 @@
 $(document).ready(function () {
         
-        setTimeout(showMantra, 1300);
+        setTimeout(showMantra, 1100);
 
         function showMantra(){
             console.log("called")

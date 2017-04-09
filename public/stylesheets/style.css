@@ -83,6 +83,10 @@ body {
 	z-index: 1;
 	color:#295b2a;
 	width:100%;
+	-webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
 }
 .titles{
 	-webkit-font-smoothing:antialiased;
@@ -468,6 +472,14 @@ footer a:hover{
 	width:100%;
 	background-color:white;
 	color:black;
+}
+#mentors{
+	width:60%;
+	text-align: center;
+}
+#mentors h2{
+	font-family:"Noto Sans";
+	text-align: center;
 }
 #leadership{
 	padding:15px;

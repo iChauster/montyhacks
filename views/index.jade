@@ -53,12 +53,12 @@ html(lang ='en')
 
 	body(data-spy="scroll" data-target="#bs-example-navbar-collapse-1") 
 		.drop#home
+			.row.nomargins
+					h1#mantra.invis LEARN. BUILD. INSPIRE.
 			canvas#canvas-image
 			.text-vertical-center.vis
 				.row.nomargins
 					img#logo(src="/images/mhlogo.png")
-				.row.nomargins
-					h1#mantra LEARN. BUILD. INSPIRE.
 				.row.nomargins
 					h1 4.22.17
 				.row.nomargins#r
@@ -202,24 +202,11 @@ html(lang ='en')
 		#sponsors
 			.container#blurcode
 				h1.titles.text-vertical-center SPONSORS & GUESTS
-			.container#leadership
-				h2 Leadership Team:
+			//- .container#speakers
+				h2 Speakers:
 				hr
-				.col-md-2.col-md-offset-1.col-xs-4.raise
-					img.photo#vineet(src="/images/VinP.png" data-toggle="modal" data-target="#vineetModal")
-					h4 Vineet Pasumarti
-				.col-md-2.col-xs-4.raise
-					img.photo#ben(src="/images/BenM.jpg" data-toggle="modal" data-target="#benModal")
-					h4 Ben Mathew 
-				.col-md-2.col-xs-4.raise
-					img.photo#julia(src="/images/JuliaG.jpg" data-toggle="modal" data-target="#juliaModal")
-					h4 Julia Guo
-				.col-md-2.col-xs-4.col-xs-offset-2.col-md-offset-0.raise
-					img.photo#niva(src="/images/NivaS.PNG" data-toggle="modal" data-target="#nivaModal")
-					h4 Nivedhitha Sivakumar
-				.col-md-2.col-xs-4.raise
-					img.photo#ivan(src="/images/IvanC.jpg" data-toggle="modal" data-target="#ivanModal")
-					h4 Ivan Chau
+				.row
+					
 			.container#support
 				h2 Sponsors:
 				hr
@@ -251,6 +238,24 @@ html(lang ='en')
 					.col-md-6
 						a.raise(href="http://www.hillsboroughpediatrics.com/index.html")
 							img.wide(src="/images/hped.png" style="height:100px;")
+			.container#leadership
+				h2 Leadership Team:
+				hr
+				.col-md-2.col-md-offset-1.col-xs-4.raise
+					img.photo#vineet(src="/images/VinP.png" data-toggle="modal" data-target="#vineetModal")
+					h4 Vineet Pasumarti
+				.col-md-2.col-xs-4.raise
+					img.photo#ben(src="/images/BenM.jpg" data-toggle="modal" data-target="#benModal")
+					h4 Ben Mathew 
+				.col-md-2.col-xs-4.raise
+					img.photo#julia(src="/images/JuliaG.jpg" data-toggle="modal" data-target="#juliaModal")
+					h4 Julia Guo
+				.col-md-2.col-xs-4.col-xs-offset-2.col-md-offset-0.raise
+					img.photo#niva(src="/images/NivaS.PNG" data-toggle="modal" data-target="#nivaModal")
+					h4 Nivedhitha Sivakumar
+				.col-md-2.col-xs-4.raise
+					img.photo#ivan(src="/images/IvanC.jpg" data-toggle="modal" data-target="#ivanModal")
+					h4 Ivan Chau
 			//-
 				h2 Catering 
 				hr
@@ -263,6 +268,7 @@ html(lang ='en')
 							Bagel Barn
 					.col-md-3
 						a.raise(href="")
+
 
 				
 
@@ -301,7 +307,7 @@ html(lang ='en')
 				.container
 					.row
 						.col-lg-12
-							Copyright &copy MontyHacks 2016
+							Copyright &copy MontyHacks 2017
 		
 		.modal.fade#vineetModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
 			.modal-dialog(role="document")

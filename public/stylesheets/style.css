@@ -73,7 +73,16 @@ body {
 }
 #mantra{
 	font-family: "Noto Sans" !important;
-	font-size: 3em !important;
+	font-size: 2.5em !important;
+	position:absolute;
+	bottom:0;
+	text-align: right;
+	margin-bottom: 0;
+	padding-bottom:0.8em;
+	padding-right:1em;
+	z-index: 1;
+	color:#295b2a;
+	width:100%;
 }
 .titles{
 	-webkit-font-smoothing:antialiased;
@@ -426,6 +435,12 @@ footer a:hover{
 }
 .container .row{
 	margin : 0;
+}
+.invis{
+	opacity: 0;
+}
+.visible{
+	opacity: 1 !important;
 }
 .vis{
 	position: relative;

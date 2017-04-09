@@ -1,5 +1,11 @@
 $(document).ready(function () {
+        
+        setTimeout(showMantra, 1300);
 
+        function showMantra(){
+            console.log("called")
+            $("#mantra").addClass('visible');
+        }
         // you want to enable the pointer events only on click;
         $('#map').addClass('scrolloff'); // set the pointer events to none on doc ready
         $('#over').on('click', function () {

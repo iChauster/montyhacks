@@ -53,6 +53,7 @@ body {
 	padding:12px;
 	color:white;
 	border:solid white 1px;
+	font-size: 1.5em;
 	text-decoration: none !important;
 	-webkit-transition: all 3s ease-in-out;
     -moz-transition: all 3s ease-in-out;
@@ -70,8 +71,15 @@ body {
 	margin-bottom:-5px;
 	width:100%;
 }
+#mantra{
+	font-family: "Noto Sans" !important;
+	font-size: 3em !important;
+}
 .titles{
 	-webkit-font-smoothing:antialiased;
+}
+.margins{
+	padding: 12em !important;
 }
 .drop{
 	width:100%;
@@ -318,6 +326,7 @@ footer a:hover{
   	animation: bounce 3s infinite;
   	padding:0;
 }
+
 #info h4{
 	text-align:center;
 	font-family:Roboto;
@@ -606,6 +615,12 @@ footer a:hover{
 	}
 	.wide {
 		max-height: 70px !important;
+	}
+	.margins{
+		padding-top : 0px !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		padding-bottom: 56.25% !important;
 	}
 }
 

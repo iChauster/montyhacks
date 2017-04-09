@@ -65,6 +65,7 @@ $(document).ready(function () {
                 }
             }
         });
+        
         var granimTop = new Granim({
             element: "#canvas-image",
             name : 'granim',
@@ -95,7 +96,7 @@ $(document).ready(function () {
         function () {
             //stuff to do on mouse leave
             granimTop.changeState("default-state")
-        });
+        }); 
 
 
 });

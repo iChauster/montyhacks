@@ -10,9 +10,9 @@ html(lang ='en')
 		script(src='javascripts/scroll.js')
 		link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
 		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
-		script(src="nodescripts/in-view/dist/in-view.min.js")
-		script(Src="nodescripts/granim/dist/granim.min.js")
 		script(src='javascripts/script.js')
+		script(src="nodescripts/in-view/dist/in-view.min.js")
+		script(src="nodescripts/granim/dist/granim.min.js")
 		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Noto+Sans|Roboto+Mono:100,100italic,300,300italic')
 		link(rel='stylesheet' type='text/css' href="font-awesome/css/font-awesome.min.css")
 	
@@ -58,6 +58,8 @@ html(lang ='en')
 				.row.nomargins
 					img#logo(src="/images/mhlogo.png")
 				.row.nomargins
+					h1#mantra LEARN. BUILD. INSPIRE.
+				.row.nomargins
 					h1 4.22.17
 				.row.nomargins#r
 					a#register(href="/register") Register
@@ -87,9 +89,8 @@ html(lang ='en')
 				.row 
 					h2 Mission
 					h3 MontyHacks was founded on the idea that all should be able to build and create. We believe that all should have the opportunity to impact and benefit the community. One of our main goals is to make cutting-edge technology accessible so that everyone has the ability to learn, grow, and create. We believe this event will not only foster growth in the STEM community, but also help those discover their shared passions for Computer Science and technology.
-				.row
-					h1#mantra LEARN. BUILD. INSPIRE.
-
+				.row.embed-responsive.embed-responsive-16by9.margins
+					iframe(width = "560" height = "315" src = "https://www.youtube.com/embed/Ws3M60W6Huk" frameborder = "0" allowfullscreen)
 				.row
 					h2 Workshops
 					h3 There's a variety of workshops available for hackers throughout the day. From mobile development to deploying on git, we've got you covered.
@@ -146,7 +147,6 @@ html(lang ='en')
 						h2 When will applications be open?
 						h3 Applications are open right now. 
 							a(href="/register") Register!
-						h3 We will notify attendees 3 weeks before the event.
 						br
 						h2 How will the selection process go?
 						h3 Hackers will be reviewed based on their application, with regards to experience, relative interest, etc. Note that we are trying to accept everybody who registers and accomodate for those coming as a a team.
@@ -183,25 +183,19 @@ html(lang ='en')
 						.row
 							h3 9:00 am: Opening Ceremony @ MPAC
 						.row
-							h3 10:00 am: Hacking Begins @ Commons
+							h3 10:00 am: Hacking Begins @ Commons, Github Workshop
 						.row
-							h3 12:00 pm: Lunch @ Commons
+							h3 11:00 am : Web Workshop / Java Workshop
 						.row
-							h3 1:00 pm - 2:00 pm : Github Workshop
+							h3 12:00 pm : iOS Workshop / Android Workshop
 						.row
-							h3 2:00 pm - 3:00 pm : Web Workshop
-						.row
-							h3 3:00 pm - 4:00 pm : Java Workshop
+							h3 1:00 pm: Lunch @ Commons
 						.row
 							h3 4:00 pm : Snack @ Commons
 						.row
-							h3 5:00 pm - 6:00 pm : iOS Workshop
+							h3 6:00 pm : Dinner @ Commons
 						.row
-							h3 6:00 pm - 7:00 pm : Android Workshop
-						.row
-							h3 7:00 pm : Dinner @ Commons
-						.row
-							h3 8:00 pm : Expos / Judging @ Gym
+							h3 7:45 pm : Expos / Judging @ Gym
 						.row
 							h3 9:00 pm : Closing Ceremony @ MPAC
 					

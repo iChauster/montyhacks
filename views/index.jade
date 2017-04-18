@@ -1,0 +1,383 @@
+doctype html
+html(lang ='en')
+	// ( ͝° ͜ʖ͡°) y so sneaky
+	head
+		title MontyHacks
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet', href='stylesheets/style.css')
+		script(src='javascripts/jquery-3.1.0.min.js')
+		script(src='javascripts/bootstrap.min.js')
+		script(src='javascripts/scroll.js')
+		link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js")
+		script(src='javascripts/script.js')
+		script(src="nodescripts/in-view/dist/in-view.min.js")
+		script(src="nodescripts/granim/dist/granim.min.js")
+		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,300,100|Noto+Sans|Roboto+Mono:100,100italic,300,300italic')
+		link(rel='stylesheet' type='text/css' href="font-awesome/css/font-awesome.min.css")
+	
+		link(rel="icon" href="stylesheets/favicons/favicon.ico")
+		meta(name="theme-color" content="#10965e")
+		link(rel="apple-touch-icon", sizes="180x180", href="/apple-touch-icon.png")
+		link(rel="icon", type="image/png", href="/favicon-32x32.png", sizes="32x32")
+		link(rel="icon", type="image/png", href="/favicon-16x16.png", sizes="16x16")
+		link(rel="manifest", href="/manifest.json")
+		link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#1ffc9f")
+	nav.navbar.navbar-default.navbar-fixed-top#nomarg
+		.container-fluid
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+					span.sr-only Toggle Navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand#nopad(href="#")
+					img(src="/images/LogoXKyleLi-1068x1068.png" style="height:50px; padding:5px;")
+			.collapse.navbar-collapse#bs-example-navbar-collapse-1
+				ul.nav.navbar-nav
+					li.active.page-scroll
+						a(href="#home") Home
+							span.sr-only (current)
+					li.page-scroll
+						a(href="#about") About
+					li.page-scroll
+						a(href="#location") Location
+					li.page-scroll
+						a(href="#faq") FAQ
+					li.page-scroll
+						a(href="#schedule") Schedule
+					li.page-scroll
+						a(href="#sponsors") Sponsors & Guests
+					li.page-scroll
+						a(href="/register") Register
+
+	body(data-spy="scroll" data-target="#bs-example-navbar-collapse-1") 
+		.drop#home
+			.row.nomargins
+					h1#mantra.invis LEARN. BUILD. INSPIRE.
+			canvas#canvas-image
+			.text-vertical-center.vis
+				.row.nomargins
+					img#logo(src="/images/mhlogo.png")
+				.row.nomargins
+					h1 4.22.17
+				.row.nomargins#r
+					a#register(href="/register") Register
+		#about
+			.wave
+				svg(width="979px" viewBox="0 0 960 173" preserveAspectRatio="none")
+					g(transform="translate(-8.000000, -15.000000)" id="Fill-3" stroke="none" fill="#fff")
+						path
+							animate(attributeName="d" dur="1000ms" repeatCount="1" values="M0,187 C47,187 86,187 136,187 C186,167 247,187 307,187 C367,187 429,187 496,187 C563,187 648,187 710,187 C772,187 820,187 866,187 C912,187 965,187 986,187 L986,187; M0,187 C47,160 86,132 136,124 C186,115 247,145 307,135 C367,126 429,76 496,67 C563,58 648,90 710,81 C772,73 820,23 866,16 C912,9 965,37 986,39 L986,187" fill="freeze")
+			.container
+				.monty.margtop
+					img#upleft(src="/images/dark-logo.png" style="width:100px;height:100px")
+					img#upright(src="/images/dark-logo.png" style="width:100px;height:100px")
+					h1.titles ABOUT
+			.container#info
+				.row.smooth
+					h1 MontyHacks is an entirely student run event hosted by the Montgomery Computer Science Club in partnership with YECNJ. It is located at Montgomery High School in Skillman, New Jersey and is the first of its kind at MHS. 
+					h4 We have wonderful mentors and speakers that will guide you along the way and hopefully help you build something great!
+					.div
+						h1#important Students 
+							strong
+								| of all experience levels 
+							| are welcome!
+				.row
+					h2 Your Experience
+					h3 Programming experience is not necessary to attend, all that's needed is an eager interest in exploring the world of computer science for 12 hours!
+				.row 
+					h2 Mission
+					h3 MontyHacks was founded on the idea that all should be able to build and create. We believe that all should have the opportunity to impact and benefit the community. One of our main goals is to make cutting-edge technology accessible so that everyone has the ability to learn, grow, and create. We believe this event will not only foster growth in the STEM community, but also help those discover their shared passions for Computer Science and technology.
+				.row.embed-responsive.embed-responsive-16by9.margins
+					iframe(width = "560" height = "315" src = "https://www.youtube.com/embed/Ws3M60W6Huk" frameborder = "0" allowfullscreen)
+				.row
+					h2 Workshops
+					h3 There's a variety of workshops available for hackers throughout the day. From mobile development to deploying on git, we've got you covered.
+				.row
+					h4#work 
+						| Our Workshops :
+						hr
+						.row.pad
+							.col-md-4
+								img.raise(src="http://www.freeiconspng.com/uploads/os7-style-metro-ui-icon-19.png" style="width:100px;height:100px")
+								#ios.pad iOS Workshop
+							.col-md-4
+								img.raise(src="https://cdn1.iconfinder.com/data/icons/ios-7-style-metro-ui-icons/512/MetroUI_OS_Android.png" style="width:100px;height:100px")
+								#android.pad Android Workshop
+							.col-md-4
+								img.raise(src = "https://www.filepicker.io/api/file/rSOy0M4mQyKrZwDeyG3S" style="width:100px; height:100px")
+								#webwork.pad Web Workshop
+						.row.pad
+							.col-md-6
+								img.raise(src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" style="width:100px; height:100px")
+								#git.pad Github Workshop
+							.col-md-6
+								img.raise(src="https://camo.githubusercontent.com/e5e451d9b64aeeccf3c043c24987d56a78395cb2/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f363133363030382f313832373837312f32646261626363342d373234342d313165332d383132612d3366356663323532323861632e706e67" style="width:100px; height:100px")
+								#java.pad Java Workshop
+
+
+		#location
+			.container.monty.margtop#wraploc
+				h1.text-vertical-center.titles LOCATION
+			#over
+				iframe#map(width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgtF35gittLvFTleyXD52Dl0R-pv2uXFA&q=Montgomery+High+School,Montgomery+NJ&zoom=14" allowfullscreen)
+
+		#faq
+			.container
+				.monty.margtop
+					h1.titles FAQ
+				.row
+					.col-md-4
+						h2 Prizes
+						h3 There's ton of things to win at MontyHacks! Our prize categories are : Environmental, Health/Fitness, Education, Game, and Mobile Application!
+						br
+						h2 Who can attend?
+						h3 Any student who will be in high school for the 2016-2017 school year can apply! If you are an exception, please contact us.
+						br
+						h2 How much does it cost?
+						h3 The cost is free for all hackers!
+						br
+						h2 Can I use something I hacked before the event?
+						h3 Unfortunately, you can't. Please don't start your hack until after the ceremony if you plan to submit it.
+					.col-md-4
+						h2 What should I bring?
+						h3 Bring your laptop, phone, chargers for both, and a sleeping bag (if necessary)! You may also want headphones, a mouse, or any other electronic accessory that makes you more comfortable in a working environment.
+						br
+						h2 When will applications be open?
+						h3 Applications are open right now. 
+							a(href="/register") Register!
+						br
+						h2 How will the selection process go?
+						h3 Hackers will be reviewed based on their application, with regards to experience, relative interest, etc. Note that we are trying to accept everybody who registers and accomodate for those coming as a a team.
+					.col-md-4
+						h2 Do I need to join a team in order to apply/hack?
+						h3 No, there will be time for team formation at the beginning of the event. Solo hackers are equally welcome!
+						br
+						h2 How large can a team be?
+						h3 A team will be capped at 4 students.
+						br 
+						h2 Will you provide travel reimbursement?
+						h3 Unfortunately we are unable to provide travel reimbursement at this time.
+						br
+						h2 What if I don't know how to code beforehand?
+						h3 That's alright! We'll have mentors and workshops to guide you through the hackathon. Students of all levels are encouraged to attend.
+				.container.pad
+					.split
+						h2 But what is a hackathon?
+						h1#essence A hackathon is a coding "competition" where hackers race to complete their own product, website, game, app, or piece of hardware to win prizes, meet new friends, and learn.
+
+		#schedule
+			.container
+				canvas#g
+				.monty.margtop.vis
+					h1.titles#sche SCHEDULE
+					hr.short
+				.row.vis
+					h2.cn SATURDAY
+					.row.cn
+						.row 
+							h3 7:00 am: Doors Open
+						.row
+							h3 8:00 am: Students Register by Main Office/Front Entrance
+						.row
+							h3 9:00 am: Opening Ceremony @ MPAC
+						.row
+							h3 10:00 am: Hacking Begins @ Commons, Github Workshop, Team Formation
+						.row
+							h3 11:00 am : Web Workshop / Java Workshop
+						.row
+							h3 12:00 pm : iOS Workshop / Android Workshop
+						.row
+							h3 1:00 pm: Lunch @ Commons
+						.row
+							h3 4:00 pm : Snack @ Commons
+						.row
+							h3 6:00 pm : Dinner @ Commons
+						.row
+							h3 7:00 pm : Hacking Ends
+						.row
+							h3 7:30 pm : Expos / Judging @ Gym
+						.row
+							h3 9:00 pm : Closing Ceremony @ MPAC
+					
+		#sponsors
+			.container#blurcode
+				h1.titles.text-vertical-center SPONSORS & GUESTS
+			//- .container#speakers
+				h2 Speakers:
+				hr
+				.row
+					
+			.container#support
+				h2 Sponsors:
+				hr
+				.row
+					a.raise(href="http://www.meetmecorp.com/")
+							img(src="http://www.meetmecorp.com/wp-content/uploads/2015/08/mm_logo_high_res_color.png" style="width:280px")
+				.row
+					a.raise(href="https://www.microsoft.com/en-us/")
+						img(src="http://blogs.microsoft.com/wp-content/uploads/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg" style="width:280px")
+				.row
+					.col-md-4
+						a.raise(href="http://jeihillsborough.com/")
+							img(src="https://s3-media1.fl.yelpcdn.com/buphoto/9J6VzJwQIBL12eAH2EJd8Q/o.jpg" style="height:100px;")
+						
+					.col-md-4
+						a.raise(href="https://www.mongodb.com/")
+							img(src="https://webassets.mongodb.com/_com_assets/cms/MongoDB-Logo-5c3a7405a85675366beb3a5ec4c032348c390b3f142f5e6dddf1d78e2df5cb5c.png" style="width:280px;")
+					.col-md-4
+						a.raise(href="http://www.montgomeryrotary.org/")
+							img(src="/images/rotary.jpg" style="width:280px")
+				.row
+					.col-md-12
+						a.raise(href="http://www.vilynx.com/aboutus.html")
+							img(src="/images/vilynx-light.png" style="width:280px;")
+				.row
+					.col-md-6
+						a.raise(href="https://www.pwc.com/")
+							img(src="/images/pwc.png" style="width:150px;")
+					.col-md-6
+						a.raise(href="http://www.hillsboroughpediatrics.com/index.html")
+							img.wide(src="/images/hped.png" style="height:100px;")
+			.container#mentors
+				h2 Mentors Provided By:
+				hr
+				.col-md-4
+					a.raise(href="https://www.meetup.com/Princeton-Tech/")
+						img(src="/images/ptechmeetup.png" style="height:8em")
+				.col-md-4
+					a.raise(href="https://www.princeton.edu/main/")
+						img(src="/images/pu.png" style = "height:8em")
+				.col-md-4
+					a.raise(href="http://www.rutgers.edu/")
+						img(src="/images/ru.jpeg" style="height:8em")
+			.container#leadership
+				h2 Leadership Team:
+				hr
+				.col-md-2.col-md-offset-1.col-xs-4.raise
+					img.photo#vineet(src="/images/VinP.png" data-toggle="modal" data-target="#vineetModal")
+					h4 Vineet Pasumarti
+				.col-md-2.col-xs-4.raise
+					img.photo#ben(src="/images/BenM.jpg" data-toggle="modal" data-target="#benModal")
+					h4 Ben Mathew 
+				.col-md-2.col-xs-4.raise
+					img.photo#julia(src="/images/JuliaG.jpg" data-toggle="modal" data-target="#juliaModal")
+					h4 Julia Guo
+				.col-md-2.col-xs-4.col-xs-offset-2.col-md-offset-0.raise
+					img.photo#niva(src="/images/NivaS.PNG" data-toggle="modal" data-target="#nivaModal")
+					h4 Nivedhitha Sivakumar
+				.col-md-2.col-xs-4.raise
+					img.photo#ivan(src="/images/IvanC.jpg" data-toggle="modal" data-target="#ivanModal")
+					h4 Ivan Chau
+			//-
+				h2 Catering 
+				hr
+				.row
+					.col-md-3
+						a.raise(href="https://phillypretzelfactory.com/")
+							img(src="/images/ppf.png" style="width:100px;")
+					.col-md-3
+						a.raise(href="https://www.facebook.com/pages/Bagel-Barn/108211919220622")
+							Bagel Barn
+					.col-md-3
+						a.raise(href="")
+
+
+				
+
+
+		footer.text-center
+			.footer-above
+				.container
+					canvas#foot
+					.row.vis
+						.footer-col.col-md-4
+							h3 For more questions/sponsor inquiries, email :
+							.row
+								a(href="mailto:montycompsciclub@gmail.com") montycompsci@gmail.com
+						.footer-col.col-md-4
+							h3 Follow us for more up-to-date info!
+							ul.list-inline
+								li
+									a.raise.btn-social.btn-outline(href="https://www.facebook.com/MontyHacks/")
+										i.fa.fa-fw.fa-facebook
+								li
+									a.raise.btn-social.btn-outline(href="https://www.instagram.com/montyhacks")
+										i.fa.fa-fw.fa-instagram
+								li
+									a.raise.btn-social.btn-outline(href="https://twitter.com/MontyHacks")
+										i.fa.fa-fw.fa-twitter
+								li
+									a.raise.btn-social.btn-outline(href="https://snapchat.com/add/montyhacks")
+										i.fa.fa-fw.fa-snapchat-ghost
+
+						.footer-col.col-md-4
+							h3 Made with 🔥 
+							h3#swol by the MontyHacks Team
+							span
+								a.button#don(href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N37DHE8BM6XB6") DONATE
+			.footer-below
+				.container
+					.row
+						.col-lg-12
+							Copyright &copy MontyHacks 2017
+		
+		.modal.fade#vineetModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Vineet '19
+					.modal-body#text
+						h5 Vineet is a sophomore and the secretary of the MHS Computer Science Club. He is interested in game and app development. His free time is filled with soccer and robotics.
+		.modal.fade#benModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Ben '20
+					.modal-body#text
+						h5 Ben is the founder and president of the Young Entrepreneurs Club of New Jersey. In his free time, he is a basketball and table tennis enthusiast.
+		.modal.fade#juliaModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Julia '18
+					.modal-body#text
+						h5 Julia is a junior and the president of the MHS Computer Science Club. She is interested in machine learning and front-end web development. In her free time, she loves petting dogs and drawing.
+		.modal.fade#nivaModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet About Niva '19
+					.modal-body#text
+						h5 Niva is a sophomore at Montgomery High School and the Vice President of the MHS Computer Science Club. In her free time, she enjoys math competitions and playing flute.
+		.modal.fade#ivanModal(tabindex="-1" role="dialog" aria-labelledby= "aboutModalLabel")
+			.modal-dialog(role="document")
+				.modal-content
+					.modal-header
+						button.close(type="button" data-dismiss="modal" aria-label="Close")
+							span(aria-hidden="true")&times;
+						h4.modal-title#aboutVineet 
+							a#ivanLink(href="http://ichauster.github.io") About Ivan '19
+					.modal-body#text
+						h5 Ivan is a sophomore at Montgomery High School and the Event Organizer of the MHS Computer Science Club. He enjoys coding and attending hackathons. And organizing events. 
+		
+
+	script.
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-63544380-3', 'auto');
+		ga('send', 'pageview');
+
+
+

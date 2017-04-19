@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
+var fs = require('fs');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index');
@@ -19,6 +20,13 @@ router.get('/auth/:email', function (req,res,next){
 			res.redirect('https://ichauster.typeform.com/to/NMnJXC')
 		}
 	})
+});
+router.get('/forms', function (req,res,next){
+	console.log("reached");
+	fs.readFile("./public/contact.pdf", function (err,data){
+     res.contentType("application/pdf");
+     res.send(data);
+  });
 });
 //8db8603fab6dab388dbce75a901979a4e53bbe91
 //NMnJXC

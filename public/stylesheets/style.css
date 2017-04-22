@@ -20,6 +20,9 @@ body {
 .cn{
 	text-align: center;
 }
+#carpet{
+	border:none !important;
+}
 .rightAlign{
 	text-align: right;
 }

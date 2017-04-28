@@ -17,7 +17,7 @@ router.get('/auth/:email', function (req,res,next){
 			res.redirect('/')
 		}else{
 			console.log('not registered, redirect to typeform')
-			res.redirect('https://ichauster.typeform.com/to/NMnJXC')
+			res.redirect('/')
 		}
 	})
 });
